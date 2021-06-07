@@ -1,0 +1,8 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+{# 배포 시에는 에러는 화면에 띄우진 말 것 #}
+  <h1>{{message}}</h1>
+  <h2>{{error.status}}</h2>
+  <pre>{{error.stack}}</pre>
+{% endblock %}
